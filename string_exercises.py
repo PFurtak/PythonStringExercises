@@ -35,13 +35,9 @@ print(leet_paragraph)
 
 # Given a word as a string, print the result of extending any long vowels to the length of 5.
 
+#######REVISIT####################################################################
 # Given a string, print the Caesar Cipher (or ROT13) of that string.
-# Decrypt the following text: "lbh zhfg hayrnea jung lbh unir yrnearq"
-
 txt = input("Please insert text you would like to encrypt with ROT13. ")
 encrypted = codecs.encode(txt, 'rot_13')
 
 print(encrypted)
-
-
-#######REVISIT####################################################################
