@@ -1,4 +1,5 @@
 # Given a string, print the string uppercased
+import codecs
 string = input(
     "Please insert a sentence you would like to tranform into all uppercase characters. ")
 
@@ -36,4 +37,11 @@ print(leet_paragraph)
 
 # Given a string, print the Caesar Cipher (or ROT13) of that string.
 # Decrypt the following text: "lbh zhfg hayrnea jung lbh unir yrnearq"
+
+txt = input("Please insert text you would like to encrypt with ROT13. ")
+encrypted = codecs.encode(txt, 'rot_13')
+
+print(encrypted)
+
+
 #######REVISIT####################################################################
