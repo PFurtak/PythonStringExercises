@@ -23,19 +23,31 @@ print(string_reversed)
 
 #######REVISIT####################################################################
 # Given a paragraph of text, convert to "Leet speak"
-# A => 4 | E => 3 | G => 6 | I => 1 | O => 0 | S => 5 | T => 7
-leet_table = {"a": "4", "e": "3", "g": "6",
-              "i": "1", "o": "0", "s": "5", "t": "7"}
-paragraph = input(
-    "Please insert a block of text you would like to translate to 1337 sp34k. ")
+# A = > 4 | E = > 3 | G = > 6 | I = > 1 | O = > 0 | S = > 5 | T = > 7
+# leet_table = {"a": "4", "e": "3", "g": "6",
+#               "i": "1", "o": "0", "s": "5", "t": "7"}
+# paragraph = input(
+#     "Please insert a block of text you would like to translate to 1337 sp34k. ")
 
-leet_paragraph = paragraph.maketrans(leet_table)
-
-print(leet_paragraph)
+# for i in paragraph:
+#     leet_para = str.maketrans(leet_table)
+# print(leet_para)
 
 # Given a word as a string, print the result of extending any long vowels to the length of 5.
 
+# vowels = 'aeiou'
+# string_four = input("Please enter a sentence to elongate vowels on. ")
+# elongated = ' '
+# i = 0
+# for i in vowels and i in string_four:
+#     elongated = string_four[i * 3] + string_four
+# else:
+#     elongated = string_four[i]
+
+# print(elongated)
+
 #######REVISIT####################################################################
+
 # Given a string, print the Caesar Cipher (or ROT13) of that string.
 txt = input("Please insert text you would like to encrypt with ROT13. ")
 encrypted = codecs.encode(txt, 'rot_13')
