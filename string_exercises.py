@@ -20,33 +20,26 @@ string_three = input(
 string_reversed = string_three[::-1]
 print(string_reversed)
 
+# Convert a string of text to leet speak
 
-#######REVISIT####################################################################
-# Given a paragraph of text, convert to "Leet speak"
-# A = > 4 | E = > 3 | G = > 6 | I = > 1 | O = > 0 | S = > 5 | T = > 7
-# leet_table = {"a": "4", "e": "3", "g": "6",
-#               "i": "1", "o": "0", "s": "5", "t": "7"}
-# paragraph = input(
-#     "Please insert a block of text you would like to translate to 1337 sp34k. ")
-
-# for i in paragraph:
-#     leet_para = str.maketrans(leet_table)
-# print(leet_para)
 
 # Given a word as a string, print the result of extending any long vowels to the length of 5.
 
-# vowels = 'aeiou'
-# string_four = input("Please enter a sentence to elongate vowels on. ")
-# elongated = ' '
-# i = 0
-# for i in vowels and i in string_four:
-#     elongated = string_four[i * 3] + string_four
-# else:
-#     elongated = string_four[i]
+vowels = 'aeiou'
+string_four = input("Please enter a sentence to elongate vowels on. ")
+elongated = ' '
+i = 0
+while i < len(string_four):
+    if string_four[i] in vowels and (i+1) < len(string_four):
+        if string_four[i] == string_four[i]:
+            elongated = elongated + (string_four[i] * 3)
+        else:
+            elongated = elongated + string_four[i]
+    else:
+        elongated = elongated + string_four[i]
+    i = i + 1
 
-# print(elongated)
-
-#######REVISIT####################################################################
+print(elongated)
 
 # Given a string, print the Caesar Cipher (or ROT13) of that string.
 txt = input("Please insert text you would like to encrypt with ROT13. ")
